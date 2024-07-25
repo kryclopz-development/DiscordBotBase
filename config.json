@@ -1,0 +1,48 @@
+{
+    "Client": {
+        "Token": "Your Bot Token",
+        "ID": "Your Bot ID"
+    },
+    "Staff": {
+      "Roles": {
+        "Staff_Role_One": "Staff Role ID",
+        "Staff_Role_Two": "Staff2 Role ID"
+      }
+    },
+    "Channels": {
+      "Error": "Your Bot Error Log Channel"
+    },
+    "Colors": {
+        "Success": "#15ff00",
+        "Failure": "#c92020",
+        "Green": "#00ff00",
+        "Red": "#ff0000",
+        "Error": "#ff1808",
+        "Generic": {
+          "Dark": "#222222",
+          "Medium": "#333333",
+          "Light": "#444444",
+          "Match": "#2b2d31"
+        }
+    },
+    "Emojis": {
+      "Emoji_1": "EmojiIdentifier"
+    },
+    "MongoDB": {
+        "URI": "MongoDB URL",
+        "LocalURI": "mongodb://localhost:21017"
+    },
+    "Bypass": {
+        "Users": [
+            "User ID To Bypass Perms",
+            "User2 ID To Bypass Perms"
+        ],
+        "Roles": [
+            "Role ID to Bypass Perms",
+            "Role2 ID to Bypass Perms"
+        ]
+    },
+    "apiKeys": {
+        "Any_API": "API Key Here" 
+    }
+}
