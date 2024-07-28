@@ -26,7 +26,7 @@ module.exports = async (client) => {
 
   process.on("uncaughtException", (err, origin) => {
 
-    console.log(`[ ERROR ]`.red + ` ${err.stack}`)
+    console.log(`[ ERROR ]`.red + ` ${err}`)
 
     const Channel = client.channels.cache.get(client.config.Channels.Error)
     if (!Channel) return
