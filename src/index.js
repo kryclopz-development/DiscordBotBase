@@ -7,14 +7,16 @@ client.config = require('../config.json')
 
 console.clear()
 
-const functions = fs.readdirSync("./src/functions").filter(file => file.endsWith(".js"));
+const handlers = fs
+	.readdirSync("./src/handlers")
+	.filter((file) => file.endsWith(".js"));
 const eventFiles = fs.readdirSync("./src/events").filter(file => file.endsWith(".js"));
 const commandFolders = fs.readdirSync("./src/commands");
 
 (async () => {
-    for (file of functions) {
-        require(`./functions/${file}`)(client);
-    }
+    for (file of handlers) {
+			require(`./handlers/${file}`)(client);
+		}
     client.handleEvents(eventFiles, "./src/events");
     client.handleCommands(commandFolders, "./src/commands");
     client.login(client.config.Client.Token)
