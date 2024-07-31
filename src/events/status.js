@@ -18,9 +18,8 @@ module.exports = {
 		});
 
     if (status) {
-      console.log(
-        "[CLIENT]".bold.cyan + " Activated Status".bold
-      );
+      console.log("[ CLIENT ]".bold.cyan + " Activated Status".bold);
+			console.log(" ");
     } else {
       return
     }
